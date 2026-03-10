@@ -16,7 +16,10 @@ LLM_CONFIG = {
 }
 
 
-embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+embeddings = OpenAIEmbeddings(
+    model="text-embedding-3-small",
+    openai_api_key=OPENAI_API_KEY
+)
 store = UpstashVectorStore(
     embedding=embeddings,
     index_url=UPSTASH_VECTOR_REST_URL,
