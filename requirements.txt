@@ -9,3 +9,5 @@ jupyter
 tiktoken
 fastapi
 uvicorn
+redis
+upstash-redis
